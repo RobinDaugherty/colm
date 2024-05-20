@@ -21,7 +21,7 @@ configure_file(ragel-config.cmake.in
 # Runtime headers
 set(RUNTIME_HDR
 	action.h fsmgraph.h ragel.h common.h
-	gendata.h redfsm.h dot.h)
+	gendata.h redfsm.h dot.h mermaid.h)
 
 # Other CMake modules
 include(GNUInstallDirs)
@@ -45,7 +45,7 @@ add_library(libfsm
 	flat.cc flatgoto.cc flatbreak.cc flatvar.cc
 	switch.cc switchgoto.cc switchbreak.cc switchvar.cc
 	goto.cc gotoloop.cc gotoexp.cc ipgoto.cc
-	dot.cc asm.cc)
+	dot.cc mermaid.cc asm.cc)
 
 target_include_directories(libfsm
 	PUBLIC

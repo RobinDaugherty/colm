@@ -6,7 +6,7 @@ lib_LTLIBRARIES = libfsm.la
 
 libfsminclude_HEADERS = \
 	action.h fsmgraph.h common.h \
-	gendata.h redfsm.h dot.h asm.h ragel.h \
+	gendata.h redfsm.h dot.h mermaid.h asm.h ragel.h \
 	binary.h bingoto.h binbreak.h binvar.h \
 	flat.h flatgoto.h flatbreak.h flatvar.h \
 	switch.h switchgoto.h switchbreak.h switchvar.h \
@@ -33,7 +33,7 @@ dist_libfsm_la_SOURCES = \
 	flat.cc flatgoto.cc flatbreak.cc flatvar.cc \
 	switch.cc switchgoto.cc switchbreak.cc switchvar.cc \
 	goto.cc gotoloop.cc gotoexp.cc ipgoto.cc \
-	dot.cc asm.cc
+	dot.cc mermaid.cc asm.cc
 
 libfsm_la_LDFLAGS = -release $(VERSION) -no-undefined
 
